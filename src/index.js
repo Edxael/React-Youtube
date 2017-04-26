@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import ReacDOM from 'react-dom';
+import Mixer from './00-Mixer.jsx';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+
+ReacDOM.render(<Mixer />, document.getElementById('root'));
