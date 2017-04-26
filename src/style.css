@@ -134,7 +134,7 @@ body{
 -----------------------------------------------------*/
 
 .bottom1{
-    height: 55px;
+    height: 50px;
     width: auto;
     margin-top: 15px;
 
@@ -147,7 +147,7 @@ body{
 .icon{
     width: 40px;
     height: 40px;
-    margin: 7px 2px 0 2px;
+    margin: 0px 2px 0 0px;
 }
 
 .eagle{
