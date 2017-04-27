@@ -9,6 +9,8 @@ $(document).ready(function () {
     });
 });
 
+
+
 function getRequest(searchTerm) {
     url = 'https://www.googleapis.com/youtube/v3/search';
     var params = {
@@ -17,14 +19,22 @@ function getRequest(searchTerm) {
         q: searchTerm
     };
 
+    console.log("Params: ", params);
+
     $.getJSON(url, params, function (searchTerm) {
         showResults(searchTerm);
     });
+
+    console.log("Params: ", params);
 }
+
+
 
 function showResults(results) {
     var html = "";
     var entries = results.items;
+
+    console.log("Las Entradas: ", entries);
 
     $.each(entries, function (index, value) {
         var title = value.snippet.title;
