@@ -6,7 +6,7 @@ function init(){
 var txt1 = document.getElementById("txt-1").value;
 
     // Execution.
-console.log("Text: ", txt1);
+console.log("Text from Input Box: ", txt1);
 getRequest(txt1);
 
     // Cleans the Input Area.
@@ -43,7 +43,8 @@ init();
 
 
 function getRequest(txt1){
-    url = 'https://www.googleapis.com/youtube/v3/search';
+    // url = 'https://www.googleapis.com/youtube/v3/search';
+    url = 'https://www.googleapis.com/youtube/v3/videos';
     var params = {
         part: 'snippet',
         key: 'AIzaSyDAKDaBy_JDwcScSHqDQimOOLjdPImLanc',
